@@ -43,17 +43,13 @@ six = """\
 | O       O |
 +-----------+"""
 
-# List of outcomes
 outcomes_list = [one, two, three, four, five, six]
-
-print("🎲 This is a Dice Simulator 🎲")
-
+print("This is a dice stimulator")
 x = "y"
-while x.lower() == "y":
-    # Roll two dice
-    random_outcome = random.choices(outcomes_list, k=2)
-    for outcome in random_outcome:
+while x == "y":
+    randon_outcome = random.sample(outcomes_list, 2)
+    for outcome in randon_outcome:
         print(outcome)
-    x = input("Press 'y' to roll again, any other key to quit: ")
-
-print("Thanks for playing!")
+    
+    x =  input("Press y to roll again ") 
+    
